@@ -21,9 +21,16 @@ For reference, the `busybox` image is 1.1M, so this is considerably smaller.
 It's not as small as the official `hello-world` example, though. That's only 1.8k! 
 
 ```
-$ docker build -t foo .
-$ docker run --rm -it foo
+$ docker build -t bennettp123/hello-world .
+$ docker run --rm -it bennettp123/hello-world
 Hello World
 $ docker image inspect foo --format='{{.Size}}'
 14610
 ```
+
+Also available on docker hub:
+
+```
+docker pull bennettp123/hello-world
+```
+
